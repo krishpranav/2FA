@@ -15,6 +15,7 @@
 		B1EBA2122A5A6B32007CFA0A /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = B1EBA2112A5A6B32007CFA0A /* SwiftOTP */; };
 		B1EBA2142A5A6B32007CFA0A /* SwiftOTP-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B1EBA2132A5A6B32007CFA0A /* SwiftOTP-Dynamic */; };
 		B1EBA2172A5A6C21007CFA0A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBA2162A5A6C21007CFA0A /* Double.swift */; };
+		B1EBA2192A5A6C8D007CFA0A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBA2182A5A6C8D007CFA0A /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B1EBA2062A5A6A4A007CFA0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B1EBA20E2A5A6AC3007CFA0A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		B1EBA2162A5A6C21007CFA0A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		B1EBA2182A5A6C8D007CFA0A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B1EBA2162A5A6C21007CFA0A /* Double.swift */,
+				B1EBA2182A5A6C8D007CFA0A /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				B1EBA2022A5A6A47007CFA0A /* ContentView.swift in Sources */,
 				B1EBA2002A5A6A47007CFA0A /* _FAApp.swift in Sources */,
+				B1EBA2192A5A6C8D007CFA0A /* String.swift in Sources */,
 				B1EBA2172A5A6C21007CFA0A /* Double.swift in Sources */,
 				B1EBA20F2A5A6AC3007CFA0A /* Account.swift in Sources */,
 			);
