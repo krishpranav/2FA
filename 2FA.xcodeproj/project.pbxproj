@@ -11,6 +11,10 @@
 		B1EBA2022A5A6A47007CFA0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBA2012A5A6A47007CFA0A /* ContentView.swift */; };
 		B1EBA2042A5A6A4A007CFA0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EBA2032A5A6A4A007CFA0A /* Assets.xcassets */; };
 		B1EBA2072A5A6A4A007CFA0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1EBA2062A5A6A4A007CFA0A /* Preview Assets.xcassets */; };
+		B1EBA20F2A5A6AC3007CFA0A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBA20E2A5A6AC3007CFA0A /* Account.swift */; };
+		B1EBA2122A5A6B32007CFA0A /* SwiftOTP in Frameworks */ = {isa = PBXBuildFile; productRef = B1EBA2112A5A6B32007CFA0A /* SwiftOTP */; };
+		B1EBA2142A5A6B32007CFA0A /* SwiftOTP-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = B1EBA2132A5A6B32007CFA0A /* SwiftOTP-Dynamic */; };
+		B1EBA2172A5A6C21007CFA0A /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EBA2162A5A6C21007CFA0A /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,8 @@
 		B1EBA2012A5A6A47007CFA0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1EBA2032A5A6A4A007CFA0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1EBA2062A5A6A4A007CFA0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1EBA20E2A5A6AC3007CFA0A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		B1EBA2162A5A6C21007CFA0A /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1EBA2142A5A6B32007CFA0A /* SwiftOTP-Dynamic in Frameworks */,
+				B1EBA2122A5A6B32007CFA0A /* SwiftOTP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,8 @@
 		B1EBA1FE2A5A6A47007CFA0A /* 2FA */ = {
 			isa = PBXGroup;
 			children = (
+				B1EBA2152A5A6C18007CFA0A /* Extensions */,
+				B1EBA20D2A5A6AAF007CFA0A /* Models */,
 				B1EBA1FF2A5A6A47007CFA0A /* _FAApp.swift */,
 				B1EBA2012A5A6A47007CFA0A /* ContentView.swift */,
 				B1EBA2032A5A6A4A007CFA0A /* Assets.xcassets */,
@@ -65,6 +75,22 @@
 				B1EBA2062A5A6A4A007CFA0A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1EBA20D2A5A6AAF007CFA0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBA20E2A5A6AC3007CFA0A /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1EBA2152A5A6C18007CFA0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBA2162A5A6C21007CFA0A /* Double.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,10 @@
 			dependencies = (
 			);
 			name = 2FA;
+			packageProductDependencies = (
+				B1EBA2112A5A6B32007CFA0A /* SwiftOTP */,
+				B1EBA2132A5A6B32007CFA0A /* SwiftOTP-Dynamic */,
+			);
 			productName = 2FA;
 			productReference = B1EBA1FC2A5A6A47007CFA0A /* 2FA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,9 @@
 				Base,
 			);
 			mainGroup = B1EBA1F32A5A6A47007CFA0A;
+			packageReferences = (
+				B1EBA2102A5A6B32007CFA0A /* XCRemoteSwiftPackageReference "SwiftOTP" */,
+			);
 			productRefGroup = B1EBA1FD2A5A6A47007CFA0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +172,8 @@
 			files = (
 				B1EBA2022A5A6A47007CFA0A /* ContentView.swift in Sources */,
 				B1EBA2002A5A6A47007CFA0A /* _FAApp.swift in Sources */,
+				B1EBA2172A5A6C21007CFA0A /* Double.swift in Sources */,
+				B1EBA20F2A5A6AC3007CFA0A /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +372,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B1EBA2102A5A6B32007CFA0A /* XCRemoteSwiftPackageReference "SwiftOTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lachlanbell/SwiftOTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B1EBA2112A5A6B32007CFA0A /* SwiftOTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1EBA2102A5A6B32007CFA0A /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = SwiftOTP;
+		};
+		B1EBA2132A5A6B32007CFA0A /* SwiftOTP-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B1EBA2102A5A6B32007CFA0A /* XCRemoteSwiftPackageReference "SwiftOTP" */;
+			productName = "SwiftOTP-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B1EBA1F42A5A6A47007CFA0A /* Project object */;
 }
